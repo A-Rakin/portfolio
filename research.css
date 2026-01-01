@@ -1,0 +1,98 @@
+/* ===== RESEARCH PAGE ===== */
+.research-section {
+  margin-left: 220px;
+  padding: 50px 40px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f6; /* Lighter background to make white cards pop */
+  color: #2c3e50;
+}
+
+.research-container {
+  display: flex;
+  flex-direction: column; /* List view often looks more academic */
+  gap: 25px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+/* Research Card Style */
+.research-card {
+  background: #ffffff;
+  padding: 30px;
+  border-left: 5px solid #3498db; /* Blue accent for research */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Badges */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.journal { background: #e8f4fd; color: #3498db; }
+.conference { background: #fef9e7; color: #f1c40f; }
+
+.status {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.online { color: #27ae60; }
+.accepted { color: #e67e22; }
+
+/* Text Styles */
+.paper-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.paper-desc {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Buttons and Links */
+.btn-link {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.btn-link:hover {
+  border-bottom: 2px solid #3498db;
+}
+
+.coming-soon {
+  font-style: italic;
+  color: #bdc3c7;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .research-section { margin-left: 0; padding: 40px 20px; }
+}
