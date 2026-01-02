@@ -4,104 +4,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Co-Curricular | Abrar Rakin</title>
-  <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="cocurricular.css"> </head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="cocurricular.css"> 
+</head>
 <body>
 
   <nav class="vertical-nav">
-    <h1 class="logo">Abrar Rakin</h1>
+    <div class="logo-box">
+      <h1 class="logo">Abrar Rakin<span>.</span></h1>
+    </div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="academic.html">Academic</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="cocurricular.html" class="active">Co-Curricular</a></li>
-      <li><a href="competitive.html">Competitive Programming</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="certifications.html">Certifications</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html"><i class="fas fa-th-large"></i> <span>Home</span></a></li>
+      <li><a href="academic.html"><i class="fas fa-user-graduate"></i> <span>Academic</span></a></li>
+      <li><a href="research.html"><i class="fas fa-microscope"></i> <span>Research</span></a></li>
+      <li><a href="cocurricular.html" class="active"><i class="fas fa-users"></i> <span>Co-Curricular</span></a></li>
+      <li><a href="competitive.html"><i class="fas fa-terminal"></i> <span>Competitive</span></a></li>
+      <li><a href="projects.html"><i class="fas fa-layer-group"></i> <span>Projects</span></a></li>
+      <li><a href="certifications.html"><i class="fas fa-certificate"></i> <span>Certifications & Achivements</span></a></li>
+      <li><a href="contact.html"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
     </ul>
+    <div class="nav-footer">
+      <div class="status-dot"></div> Available for Research
+    </div>
   </nav>
 
-  <section class="cocurricular-section">
-    <div class="header-content">
-      <h1 class="page-title">Leadership & Impact</h1>
-      <p class="page-subtitle">Official roles and mentoring positions I have held within the university community.</p>
-    </div>
+  <main class="cocurricular-wrapper">
+    <div class="grid-overlay"></div>
+    
+    <header class="section-intro">
+      <h1 class="glow-title">Leadership & Impact</h1>
+      <p class="subtitle">Official roles and mentoring positions within the university community.</p>
+    </header>
 
     <div class="timeline-container">
       
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">August 2025 - Present</div>
-        <div class="timeline-content">
-          <span class="role-tag current">Active Role</span>
+      <div class="timeline-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-brain"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="timeline-glass-card current">
+          <div class="card-meta">
+            <span class="role-tag active-node">Active Role</span>
+            <span class="node-date">Aug 2025 — Present</span>
+          </div>
           <h3>Machine Learning Mentor</h3>
-          <h4 class="organization">International University of Business Agriculture and Technology</h4>
-          <p>Guiding junior students in foundational concepts, practical implementations, and problem-solving techniques for machine learning projects and competitions.</p>
+          <p class="organization">International University of Business Agriculture and Technology</p>
+          <p class="description">Guiding junior students in foundational concepts, practical implementations, and problem-solving techniques for ML projects and competitions.</p>
         </div>
       </div>
 
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">August 2023 - Present</div>
-        <div class="timeline-content">
-          <span class="role-tag current">Active Role</span>
+      <div class="timeline-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="timeline-glass-card current">
+          <div class="card-meta">
+            <span class="role-tag active-node">Active Role</span>
+            <span class="node-date">Aug 2023 — Present</span>
+          </div>
           <h3>Academic Mentor</h3>
-          <h4 class="organization">IUBAT IT Society Academic Wing</h4>
-          <p>Provided academic support in <strong> Structured Programming language, Object Oriented Programming Language, Physics and Data Structures & Algorithms</strong>.</p>
+          <p class="organization">IUBAT IT Society Academic Wing</p>
+          <p class="description">Provided academic support in <strong>Structured Programming, OOP, Physics, and Data Structures & Algorithms</strong>.</p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025 - Present</div>
-        <div class="timeline-content">
-          <span class="role-tag management">Management</span>
+      <div class="timeline-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-tasks"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="timeline-glass-card">
+          <div class="card-meta">
+            <span class="role-tag mgmt-node">Management</span>
+            <span class="node-date">2025 — Present</span>
+          </div>
           <h3>Additional Manager</h3>
-          <h4 class="organization">IUBAT Programming Club</h4>
-          <p>Coordinating club activities, managing technical events, and fostering a collaborative environment for student developers.</p>
+          <p class="organization">IUBAT Programming Club</p>
+          <p class="description">Coordinating club activities, managing technical events, and fostering a collaborative environment for student developers.</p>
         </div>
       </div>
 
-       <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2023 (November) - 2024 (February)</div>
-        <div class="timeline-date">2024 (November) - 2025 (February)</div>
-        <div class="timeline-content">
-          <span class="role-tag management">Management</span>
-          <h3>Photography and Videography Coordinator</h3>
-          <h4 class="organization">HULT Price International IUBAT</h4>
-          <p>Coordinating Photography and Videography Segment in the Business IDEA Generate Conpetition</p>
+      <div class="timeline-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-camera"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="timeline-glass-card">
+          <div class="card-meta">
+            <span class="role-tag mgmt-node">Creative Management</span>
+            <span class="node-date">2023 — 2025 (Sessions)</span>
+          </div>
+          <h3>Photography & Videography Coordinator</h3>
+          <p class="organization">HULT Prize International IUBAT</p>
+          <p class="description">Coordinating visual content segments in the Business IDEA Generation Competition across multiple sessions.</p>
         </div>
       </div>
 
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024 (January) - 2024 (June)</div>
-        <div class="timeline-content">
-          <span class="role-tag management">Leadership</span>
-          <h3>Student Ambassador</h3>
-          <h4 class="organization">Wakelet</h4>
-          <p>A platform that lets teachers organize and share multimedia content in visually appealing collections, making learning and collaboration easy with a single link.</p>
+      <div class="timeline-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fab fa-wordpress"></i></div>
+          <div class="node-line"></div>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024 (August) - 2024 (January)</div>
-        <div class="timeline-content">
-          <span class="role-tag management">Professional Internship</span>
-          <h3>Wordpress Web Development Intern</h3>
-          <h4 class="organization">GaoTek Inc.</h4>
-          <p>Proficient in working with WordPress and various plugins, gained through a 6-month online internship.</p>
+        <div class="timeline-glass-card highlight-intern">
+          <div class="card-meta">
+            <span class="role-tag tech-node">Professional Internship</span>
+            <span class="node-date">Aug 2024 — Jan 2024</span>
+          </div>
+          <h3>WordPress Web Development Intern</h3>
+          <p class="organization">GaoTek Inc.</p>
+          <p class="description">Proficient in working with WordPress architectures and various plugins through a intensive 6-month online professional internship.</p>
         </div>
-      </div>
-      
       </div>
 
     </div>
-  </section>
-
+  </main>
 </body>
 </html>
