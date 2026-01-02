@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Abrar Rakin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="projects.css">
 </head>
@@ -12,393 +12,411 @@
 
   <nav class="vertical-nav">
     <div class="nav-content">
-      <h1 class="logo">Abrar Rakin<span>.</span></h1>
+      <div class="logo-box">
+        <h1 class="logo">Abrar Rakin<span>.</span></h1>
+      </div>
       <ul class="nav-links">
-    <li><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
-    <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> <span>Academic</span></a></li>
-    <li><a href="research.html"><i class="fas fa-microscope"></i> <span>Research</span></a></li>
-    <li><a href="cocurricular.html"><i class="fas fa-users"></i> <span>Co-Curricular</span></a></li>
-    <li><a href="competitive.html"><i class="fas fa-terminal"></i> <span>Competitive</span></a></li>
-    <li><a href="projects.html" class="active"><i class="fas fa-layer-group"></i> <span>Projects</span></a></li>
-    <li><a href="certifications.html"><i class="fas fa-certificate"></i> <span>Certifications</span></a></li>
-    <li><a href="contact.html"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
-</ul>
+        <li><a href="index.html"><i class="fas fa-th-large"></i> <span>Home</span></a></li>
+        <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> <span>Academic</span></a></li>
+        <li><a href="research.html"><i class="fas fa-microscope"></i> <span>Research</span></a></li>
+        <li><a href="cocurricular.html"><i class="fas fa-users"></i> <span>Co-Curricular</span></a></li>
+        <li><a href="competitive.html"><i class="fas fa-terminal"></i> <span>Competitive</span></a></li>
+        <li><a href="projects.html" class="active"><i class="fas fa-layer-group"></i> <span>Projects</span></a></li>
+        <li><a href="certifications.html"><i class="fas fa-certificate"></i> <span>Certifications & Achivements</span></a></li>
+        <li><a href="contact.html"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
+      </ul>
+      <div class="nav-footer">
+        <div class="status-dot"></div> Available for Research
+      </div>
     </div>
   </nav>
 
   <main class="main-wrapper">
-    <div class="blob-bg"></div>
+    <div class="glow-orb"></div>
 
     <header class="project-header">
       <h1 class="glitch-text">Project Gallery</h1>
-      <p>A curated selection of my technical research and software engineering projects.</p>
+      <p class="header-sub">A curated selection of technical research architectures and automated software solutions.</p>
     </header>
 
-    <h2 class="category-title">Development and Automation</h2>
-    <div class="card-grid">
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Smart Room Monitoring System</h3>
-        <p>A real-time webcam-based face recognition system using MTCNN and ResNet50 that detects unknown individuals and instantly sends Telegram alerts.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/smart-room-monitoring-system" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
+    <div class="category-wrapper">
+      <h2 class="category-title">Development and Automation</h2>
+      <div class="card-grid">
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Python</span>
+            <i class="fas fa-robot tech-icon"></i>
+          </div>
+          <h3>Smart Room Monitoring</h3>
+          <p>Real-time face recognition using MTCNN and ResNet50 that detects unknown individuals and sends Telegram alerts.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/smart-room-monitoring-system" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Object Detection App</h3>
-        <p>A YOLOv5-based object detection system for identifying and labeling objects in images and real-time webcam video streams.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/object-detection-app-python" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Language Translator App</h3>
-        <p>A Python-based GUI language translator using Tkinter and googletrans for instant multi-language text translation.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/language-translator-python" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Currency Converter</h3>
-        <p>A Python Tkinter–based currency converter that allows users to convert between 26+ global currencies using JSON-stored exchange rates. It features a clean GUI, easy currency selection, and reliable error handling for invalid inputs.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/currency-converter" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Expense Tracker</h3>
-        <p>A Python CLI-based expense tracker that records daily spending, summarizes expenses by category, and visualizes financial trends using charts</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/expense-tracker" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Facial Emotion Recognizer</h3>
-        <p>A real-time webcam emotion detection system that identifies faces, predicts the dominant emotion with confidence, and displays the results live on screen.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Facial-Emotion-Recognizer" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Jarvis AI Assistant</h3>
-        <p>A Python-based voice assistant that recognizes speech, responds with voice output, tells the time, and searches Wikipedia on command.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/jarvis-ai-assistant-python" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Password Generator</h3>
-        <p>A Python-based random password generator that creates secure passwords of user-defined length using letters, numbers, and special characters.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Password-Generator-Python-Project" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Typing Speed Test</h3>
-        <p>A Python CLI typing speed test that measures typing time, WPM, accuracy, and errors using randomly selected sentences.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Typing-Speed-Test-Python-Project" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Plagiarisam Checker App</h3>
-        <p>A Python-based text similarity checker that uses difflib to compare two text files and report their plagiarism percentage.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/plagiarism-checker" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Development in Python</div>
-        <h3>Python Weather App</h3>
-        <p>A Python script that randomly selects a city and scrapes its current weather from Google using BeautifulSoup.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/python-weather-app" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
-      </div>
-      
-    </div>
-
-    <h2 class="category-title">Systems & Console Apps</h2>
-    <div class="card-grid">
-      <div class="glass-card">
-        <div class="card-tag">MERN</div>
-        <h3>Online Medicine Shop</h3>
-        <p>An MERN based online medicine purchasing, helping system</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Online-Medicine-Store" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-
-      <div class="glass-card">
-        <div class="card-tag">JAVA</div>
-        <h3>Kids Math Game Application</h3>
-        <p>An Android App made with java native. This app allows kids to play with mathematics. This is a Mobile App</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Kids-Math-Game-Application" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">JAVA</div>
-        <h3>To Do Mobile Application</h3>
-        <p>A Java-based Android To-Do app for creating, managing, and tracking tasks efficiently.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/To-Do-Application-Android-App" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-      
-      <div class="glass-card">
-        <div class="card-tag">JAVA</div>
-        <h3>Number Guessing Game</h3>
-        <p>A Java-based Android number guessing game app that uses random number generation, conditional logic, and user input handling for interactive gameplay.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Number-Guessing-Game" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-      
-
-      <div class="glass-card">
-        <div class="card-tag">PHP</div>
-        <h3>Blood Donation Management System</h3>
-        <p>A PHP-based Blood Donation Management System with JavaScript-powered dynamic forms and real-time validation for donor and recipient tracking.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Blood-Donation-Management-System" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">JavaScript</div>
-        <h3>Rock Paper Scissor</h3>
-        <p>A web-based Rock-Paper-Scissors game built with HTML, CSS, and JavaScript, featuring interactive gameplay and dynamic visuals.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Rock-Paper-Scissor-Game" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">C#</div>
-        <h3>E Commerce Web API</h3>
-        <p>A C#-based e-commerce Web API that handles product management, user orders, and transactions for online shopping platforms.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/ECommerce-Web-API-Building-Via-ASP.NET-Framework" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">JavaScript</div>
-        <h3>Quiz Game</h3>
-        <p>A beginner-friendly web-based quiz game built with HTML, CSS, and JavaScript that scores users based on their answers.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Quiz-Game" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-
-      <div class="glass-card">
-        <div class="card-tag">Django</div>
-        <h3>Weather App</h3>
-        <p>A Django-based weather app that fetches and displays real-time weather data with dynamic backgrounds and alerts for unavailable cities.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/weather-app-django" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Flask</div>
-        <h3>Nasa Space Exoplanet Prediction</h3>
-        <p>A Flask-based web app for predicting exoplanets using NASA Space Apps datasets and machine learning models.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/nasa-space-apps-exoplanet" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-
-    <h2 class="category-title">Machine Learning & Deep Learning</h2>
-    <div class="card-grid">
 
         <div class="glass-card">
-        <div class="card-tag">Deep Learning</div>
-        <h3>Breast Cancer Classification</h3>
-        <p>A deep learning–based breast cancer classification system that analyzes medical data or images to predict cancer presence and type.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Breast-Cancer-Classification-using-Deep-Learning" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
+          <div class="card-top">
+            <span class="skill-ribbon">AI / CV</span>
+            <i class="fas fa-eye tech-icon"></i>
+          </div>
+          <h3>Object Detection App</h3>
+          <p>A YOLOv5-based object detection system for identifying and labeling objects in real-time webcam video streams.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/object-detection-app-python" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Python / GUI</span>
+            <i class="fas fa-language tech-icon"></i>
+          </div>
+          <h3>Language Translator App</h3>
+          <p>Python-based GUI translator using Tkinter and googletrans for instant multi-language text translation.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/language-translator-python" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Tkinter</span>
+            <i class="fas fa-dollar-sign tech-icon"></i>
+          </div>
+          <h3>Currency Converter</h3>
+          <p>Allows conversion between 26+ global currencies using JSON exchange rates with a clean GUI and error handling.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/currency-converter" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Python CLI</span>
+            <i class="fas fa-wallet tech-icon"></i>
+          </div>
+          <h3>Expense Tracker</h3>
+          <p>Records daily spending, summarizes by category, and visualizes financial trends using charts.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/expense-tracker" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Deep Learning</span>
+            <i class="fas fa-smile tech-icon"></i>
+          </div>
+          <h3>Facial Emotion Recognizer</h3>
+          <p>Real-time emotion detection system identifying dominant emotions with confidence scores displayed live.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Facial-Emotion-Recognizer" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Voice AI</span>
+            <i class="fas fa-microphone tech-icon"></i>
+          </div>
+          <h3>Jarvis AI Assistant</h3>
+          <p>Recognizes speech, responds with voice output, tells time, and performs Wikipedia searches.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/jarvis-ai-assistant-python" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Python</span>
+            <i class="fas fa-key tech-icon"></i>
+          </div>
+          <h3>Password Generator</h3>
+          <p>Creates secure passwords of defined lengths using letters, numbers, and special characters.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Password-Generator-Python-Project" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">CLI Tool</span>
+            <i class="fas fa-keyboard tech-icon"></i>
+          </div>
+          <h3>Typing Speed Test</h3>
+          <p>CLI tool measuring typing time, WPM, and accuracy using randomly selected sentences.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Typing-Speed-Test-Python-Project" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Python</span>
+            <i class="fas fa-copy tech-icon"></i>
+          </div>
+          <h3>Plagiarism Checker</h3>
+          <p>Uses difflib to compare text files and report similarity percentage for plagiarism detection.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/plagiarism-checker" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Web Scraping</span>
+            <i class="fas fa-cloud-sun tech-icon"></i>
+          </div>
+          <h3>Python Weather App</h3>
+          <p>Scrapes current weather data from Google using BeautifulSoup for randomly selected cities.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/python-weather-app" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Source
+            </a>
+          </div>
         </div>
       </div>
+    </div>
 
+    <div class="category-wrapper">
+      <h2 class="category-title">Systems & Console Apps</h2>
+      <div class="card-grid">
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">MERN</span>
+            <i class="fas fa-pills tech-icon"></i>
+          </div>
+          <h3>Online Medicine Shop</h3>
+          <p>Full-stack MERN application for online medicine purchasing and healthcare support.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Online-Medicine-Store" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
 
-      <div class="glass-card">
-        <div class="card-tag">Deep Learning</div>
-        <h3>Hand Written Digits Classification</h3>
-        <p>A deep learning model for classifying handwritten digits, typically using datasets like MNIST for accurate digit recognition.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Handwritten-Digits-Classification" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Java / Android</span>
+            <i class="fas fa-plus-square tech-icon"></i>
+          </div>
+          <h3>Kids Math Game</h3>
+          <p>Native Android application developed with Java to help kids interact with mathematics through gaming.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Kids-Math-Game-Application" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Java / Android</span>
+            <i class="fas fa-tasks tech-icon"></i>
+          </div>
+          <h3>To-Do Application</h3>
+          <p>Android task manager for creating, managing, and tracking daily tasks efficiently.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/To-Do-Application-Android-App" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Java</span>
+            <i class="fas fa-dice tech-icon"></i>
+          </div>
+          <h3>Number Guessing Game</h3>
+          <p>Features random number generation and interactive logic for native Android gameplay.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Number-Guessing-Game" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">PHP / JS</span>
+            <i class="fas fa-tint tech-icon"></i>
+          </div>
+          <h3>Blood Donation System</h3>
+          <p>PHP backend with dynamic JS-powered validation for donor and recipient management.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Blood-Donation-Management-System" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">JavaScript</span>
+            <i class="fas fa-hand-scissors tech-icon"></i>
+          </div>
+          <h3>Rock Paper Scissor</h3>
+          <p>Web-based game featuring interactive gameplay and dynamic frontend visuals.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Rock-Paper-Scissor-Game" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">C# / ASP.NET</span>
+            <i class="fas fa-shopping-cart tech-icon"></i>
+          </div>
+          <h3>E-Commerce Web API</h3>
+          <p>Handles product management, user orders, and transactions for online platforms.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/ECommerce-Web-API-Building-Via-ASP.NET-Framework" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Django</span>
+            <i class="fas fa-cloud tech-icon"></i>
+          </div>
+          <h3>Weather App</h3>
+          <p>Fetches real-time weather data with dynamic backgrounds and city-specific alerts.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/weather-app-django" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card research-highlight">
+          <div class="card-top">
+            <span class="skill-ribbon">Flask / ML</span>
+            <i class="fas fa-rocket tech-icon"></i>
+          </div>
+          <h3>Exoplanet Prediction</h3>
+          <p>NASA Space Apps project predicting exoplanets using specialized datasets and ML models.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/nasa-space-apps-exoplanet" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
         </div>
       </div>
+    </div>
 
+    <div class="category-wrapper">
+      <h2 class="category-title">Machine Learning & Deep Learning</h2>
+      <div class="card-grid">
+        <div class="glass-card research-highlight">
+          <div class="card-top">
+            <span class="skill-ribbon">Federated Learning</span>
+            <i class="fas fa-shield-alt tech-icon"></i>
+          </div>
+          <h3>Privacy CKD Prediction</h3>
+          <p>Decentralized model training on distributed patient data for Chronic Kidney Disease while preserving privacy.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/ckd-prediction-with-federated-learning-practice" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
 
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">NLP</span>
+            <i class="fas fa-file-alt tech-icon"></i>
+          </div>
+          <h3>Human vs AI Essay Detection</h3>
+          <p>Analyzes and classifies essays to distinguish between human-written and AI-generated content.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/human-vs-ai-generated-essays-prediction" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
 
-      <div class="glass-card">
-        <div class="card-tag">Deep Learning</div>
-        <h3>Face Mask Detection</h3>
-        <p>A deep learning-based face mask detection system that identifies whether individuals are wearing masks in real-time or from images.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Face-Mask-Detection-Using-CNN" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
+        <div class="glass-card research-highlight">
+          <div class="card-top">
+            <span class="skill-ribbon">Medical AI</span>
+            <i class="fas fa-dna tech-icon"></i>
+          </div>
+          <h3>PCOS Prediction</h3>
+          <p>Stacked ensemble (XRNA-PolyStacker) for high-accuracy Polycystic Ovary Syndrome prediction.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Polycystic-ovary-syndrome-PCOS-Predicition" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">CNN</span>
+            <i class="fas fa-lungs tech-icon"></i>
+          </div>
+          <h3>Pneumonia Detection</h3>
+          <p>Deep learning system detecting pneumonia from chest X-ray images using computer vision.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/pneumonia-detection-chest-x-ray-images" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Deep Learning</span>
+            <i class="fas fa-ribbon tech-icon"></i>
+          </div>
+          <h3>Breast Cancer Classification</h3>
+          <p>Analyzes medical images to predict cancer presence and specific malignancy types.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Breast-Cancer-Classification-using-Deep-Learning" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="skill-ribbon">Computer Vision</span>
+            <i class="fas fa-head-side-mask tech-icon"></i>
+          </div>
+          <h3>Face Mask Detection</h3>
+          <p>CNN-based system identifying mask compliance in real-time video or static images.</p>
+          <div class="card-footer">
+            <a href="https://github.com/A-Rakin/Face-Mask-Detection-Using-CNN" target="_blank" class="btn-neo">
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
         </div>
       </div>
-
-
-
-      <div class="glass-card">
-        <div class="card-tag">Machine Learning</div>
-        <h3>Crop Prediction</h3>
-        <p>A machine learning model that predicts the most suitable crop to cultivate based on soil, weather, and environmental parameters.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/crop-prediction-machine-learning" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-
-      <div class="glass-card">
-        <div class="card-tag">Federated Learning</div>
-        <h3>Privacy Preserving Chronic Kidney Disease Prediction</h3>
-        <p>A federated learning approach for predicting chronic kidney disease (CKD), enabling decentralized model training on distributed patient data while preserving privacy.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/ckd-prediction-with-federated-learning-practice" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Machine Learning</div>
-        <h3>Ashmna Disease Prediction</h3>
-        <p>A machine learning model that predicts or classifies asthma disease based on patient data and health indicators.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Asthma-Disease-Prediction" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Natural Language Processing</div>
-        <h3>Human vs AI Generated Essays Prediction</h3>
-        <p>An NLP-based system that analyzes and classifies essays to distinguish between human-written and AI-generated content.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/human-vs-ai-generated-essays-prediction" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Machine Learning</div>
-        <h3>Polysictic Ovary Syndrome Prediction</h3>
-        <p>A machine learning and deep learning approach for PCOS prediction using a novel stacking ensemble (XRNA-PolyStacker) on a balanced dataset, with label encoding and near-perfect accuracy, though potential data leakage may exist.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/Polycystic-ovary-syndrome-PCOS-Predicition" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Deep Learning</div>
-        <h3>Pneumonia Detection</h3>
-        <p>A deep learning-based system that detects pneumonia from chest X-ray images using medical image analysis techniques.</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/pneumonia-detection-chest-x-ray-images" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-      <div class="glass-card">
-        <div class="card-tag">Machine Learning</div>
-        <h3>Iris Species Prediction</h3>
-        <p>A Flask web app that predicts Iris flower species using machine learning models based on user-provided features</p>
-        <div class="card-actions">
-          <a href="https://github.com/A-Rakin/iris-species-prediction" target="_blank" class="project-btn">
-            <i class="fab fa-github"></i> Repository
-          </a>
-        </div>
-      </div>
-
-    </div>   
+    </div>
   </main>
 
 </body>
