@@ -209,28 +209,36 @@ body {
     line-height: 1.6;
 }
 
-/* Links/Buttons Fix: Neon Contrast */
-.project-btn {
+
+.project-btn, .btn-neo {
     text-decoration: none;
-    color: var(--accent) !important; /* Forces high-contrast blue links */
-    font-size: 0.9rem;
-    font-weight: 700;
+    color: #ffffff !important; /* টেক্সট সাদা নিশ্চিত করতে */
+    font-size: 0.85rem;
+    font-weight: 600;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.05); /* হালকা গ্রে ব্যাকগ্রাউন্ড */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* হালকা বর্ডার */
     border-radius: 8px;
-    transition: 0.3s;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
 }
 
-.project-btn:hover {
-    background: var(--accent);
-    color: var(--bg-dark) !important; /* Switches text to dark for readability */
-    box-shadow: 0 0 15px var(--accent-glow);
+
+.project-btn:hover, .btn-neo:hover {
+    background: rgba(56, 189, 248, 0.1); /* হালকা নীল আভা */
+    color: #38bdf8 !important; /* টেক্সট নীল হবে */
+    border-color: #38bdf8; /* বর্ডার উজ্জ্বল নীল হবে */
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3); /* গ্লো ইফেক্ট */
+    transform: translateY(-2px);
 }
 
+
+.project-btn i, .btn-neo i {
+    font-size: 1.1rem;
+}
 /* Responsive Logic */
 @media (max-width: 1024px) {
     .vertical-nav { width: 80px; padding: 40px 10px; }
@@ -238,3 +246,4 @@ body {
     .main-wrapper { margin-left: 80px; padding: 60px 5%; }
     .glitch-text { font-size: 2.5rem; }
 }
+
