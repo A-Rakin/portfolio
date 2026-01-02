@@ -3,45 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abrar Rakin | Portfolio</title>
+  <title>Abrar Rakin | AI Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== VERTICAL NAVBAR ===== -->
+
   <nav class="vertical-nav">
-    <h1 class="logo">Rakin</h1>
+    <div class="logo-box">
+      <h1 class="logo">AR<span>.</span></h1>
+    </div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="academic.html">Academic</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="cocurricular.html">Co-Curricular</a></li>
-      <li><a href="competitive.html">Competitive Programming</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="certifications.html">Certifications</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" class="active"><i class="fas fa-th-large"></i> <span>Home</span></a></li>
+      <li><a href="academic.html"><i class="fas fa-user-graduate"></i> <span>Academic</span></a></li>
+      <li><a href="research.html"><i class="fas fa-microscope"></i> <span>Research</span></a></li>
+      <li><a href="competitive.html"><i class="fas fa-code"></i> <span>Competitive</span></a></li>
+      <li><a href="projects.html"><i class="fas fa-terminal"></i> <span>Projects</span></a></li>
+      <li><a href="contact.html"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
     </ul>
+    <div class="nav-footer">
+      <div class="status-dot"></div> Available for Research
+    </div>
   </nav>
 
-  <!-- ===== FRONT PAGE ===== -->
-  <section class="front-page">
+  <main class="front-page">
+    <div class="grid-overlay"></div>
+    
     <div class="front-content">
-      <!-- Text Section -->
-      <div class="profile-text">
-        <h2>Hi, This is <span>Abrar Rakin</span></h2>
-        <p>
-          I am pursuing a degree in Computer Science and Engineering with a 
-          strong focus on Machine Learning, Deep Learning, Natural Language Processing, 
-          Image Processing, and Computer Vision. I also have hands-on experience in 
-          mobile application and front-end development, and I am deeply interested in 
-          problem solving and competitive programming.
+      <div class="text-side">
+        <div class="badge">Machine Learning Engineer</div>
+        <h2 class="hero-title">Elevating Data into <br><span>Intelligence.</span></h2>
+        <p class="hero-desc">
+          I am <strong>Abrar Rakin</strong>, a CSE researcher specialized in <span class="highlight">Deep Learning</span> and <span class="highlight">Computer Vision</span>. Bridging the gap between academic theory and scalable AI solutions.
         </p>
+        <div class="hero-btns">
+          <a href="research.html" class="btn-primary">View Research</a>
+          <a href="contact.html" class="btn-secondary">Let's Connect</a>
+        </div>
       </div>
-      
-      <!-- Image Section -->
-      <div class="profile-image">
-        <img src="images/rakin.jpeg" alt="Abrar Rakin">
+
+      <div class="image-side">
+        <div class="image-frame">
+          <img src="images/rakin.jpeg" alt="Abrar Rakin">
+          <div class="frame-border"></div>
+          <div class="scan-line"></div>
+        </div>
       </div>
     </div>
-  </section>
+  </main>
 </body>
 </html>
