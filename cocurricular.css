@@ -1,109 +1,150 @@
-/* ===== CO-CURRICULAR STYLING ===== */
-.cocurricular-section {
-  margin-left: 220px; /* Space for sidebar */
-  padding: 80px 50px;
-  min-height: 100vh;
-  background: #0f172a; /* Professional dark navy */
-  color: #f8fafc;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ===== CO-CURRICULAR HUB CSS ===== */
+.cocurricular-wrapper {
+    margin-left: 260px;
+    padding: 80px 8%;
+    min-height: 100vh;
+    position: relative;
+    background: var(--bg-dark);
 }
 
-.header-content {
-  text-align: center;
-  margin-bottom: 70px;
+.glow-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
-.page-title {
-  font-size: 3rem;
-  font-weight: 800;
-  background: linear-gradient(to right, #3498db, #2ecc71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
+.subtitle {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    margin-bottom: 60px;
+    font-size: 0.95rem;
 }
 
-/* Timeline Layout */
+/* Node/Timeline Structure */
 .timeline-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 40px;
-  border-left: 2px solid rgba(52, 152, 219, 0.2); /* Faded track */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 60px;
+.timeline-node {
+    display: flex;
+    gap: 30px;
+    position: relative;
 }
 
-/* Glowing Timeline Dot */
-.timeline-dot {
-  position: absolute;
-  left: -49px;
-  top: 5px;
-  width: 16px;
-  height: 16px;
-  background: #3498db;
-  border: 4px solid #0f172a;
-  border-radius: 50%;
-  box-shadow: 0 0 12px #3498db;
-  z-index: 2;
-  transition: 0.4s ease;
+.node-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
 }
 
-.timeline-item:hover .timeline-dot {
-  background: #2ecc71;
-  box-shadow: 0 0 20px #2ecc71;
-  transform: scale(1.3);
+.node-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--sidebar-bg);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+    z-index: 2;
+    transition: 0.4s ease;
 }
 
-.timeline-date {
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #3498db;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+.timeline-node:hover .node-icon {
+    transform: scale(1.1) rotate(-5deg);
+    border-color: #fff;
+    box-shadow: 0 0 25px var(--accent);
 }
 
-/* Glassmorphism Card Style */
-.timeline-content {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(8px);
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.node-line {
+    width: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+    opacity: 0.3;
 }
 
-.timeline-content:hover {
-  transform: translateX(15px);
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(52, 152, 219, 0.4);
+/* Glassmorphism Cards */
+.timeline-glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    flex-grow: 1;
+    backdrop-filter: blur(10px);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Tags and Typography */
+.timeline-glass-card:hover {
+    transform: translateX(15px);
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 20px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-glass-card.current {
+    border-left: 4px solid #2ecc71;
+}
+
+/* Meta Labels */
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
 .role-tag {
-  display: inline-block;
-  padding: 5px 15px;
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 30px;
-  margin-bottom: 15px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-.current { background: #2ecc71; color: #0f172a; }
-.management { background: #f1c40f; color: #0f172a; }
-.academic { background: #9b59b6; color: white; }
+.active-node { background: rgba(46, 204, 113, 0.15); color: #2ecc71; }
+.mgmt-node { background: rgba(241, 196, 15, 0.15); color: #f1c40f; }
+.tech-node { background: rgba(56, 189, 248, 0.15); color: var(--accent); }
 
-.timeline-content h3 { font-size: 1.6rem; color: #fff; margin-bottom: 5px; }
-.organization { color: #94a3b8; font-weight: 400; font-size: 1.1rem; margin-bottom: 15px; display: block; }
-.timeline-content p { line-height: 1.7; color: #cbd5e1; }
+.node-date {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
 
-/* Responsive adjustments */
+.timeline-glass-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.organization {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.description {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
-  .cocurricular-section { margin-left: 0; padding: 50px 20px; }
-  .timeline-container { margin-left: 20px; }
+    .cocurricular-wrapper { margin-left: 80px; padding: 60px 5%; }
+    .node-sidebar { display: none; }
+    .timeline-node { gap: 0; }
+    .glow-title { font-size: 2.5rem; }
 }
