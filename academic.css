@@ -1,135 +1,181 @@
-/* ===== ACADEMIC TIMELINE CSS ===== */
+/* ===== REQUIRED VARIABLES (Must match index.html) ===== */
+:root {
+    --bg-dark: #020617;
+    --sidebar-bg: #0f172a;
+    --accent: #38bdf8;
+    --accent-purple: #a855f7;
+    --accent-glow: rgba(56, 189, 248, 0.3);
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --font-main: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
 
+/* ===== ACADEMIC TIMELINE CSS ===== */
 .academic-wrapper {
-  margin-left: 260px;
-  padding: 80px 10%;
-  min-height: 100vh;
-  position: relative;
+    margin-left: 260px; /* Space for sidebar */
+    padding: 80px 5%;
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+    position: relative;
+    z-index: 1; /* Ensures content stays above background grid */
+}
+
+/* Background Grid Overlay (To match Home page) */
+.academic-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .glow-text {
-  font-size: 3rem;
-  font-weight: 800;
-  background: linear-gradient(90deg, #fff, var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #fff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .subtitle {
-  color: var(--text-dim);
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  margin-bottom: 60px;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    margin-bottom: 60px;
 }
 
 /* Timeline Logic */
 .timeline-container {
-  position: relative;
-  max-width: 800px;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
 }
 
 /* The vertical line */
 .timeline-container::before {
-  content: '';
-  position: absolute;
-  left: 30px;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--accent), transparent);
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--accent), transparent);
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 50px;
-  padding-left: 80px;
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 80px;
 }
 
 .timeline-node {
-  position: absolute;
-  left: 15px;
-  top: 0;
-  width: 32px;
-  height: 32px;
-  background: var(--bg-dark);
-  border: 2px solid var(--accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  box-shadow: 0 0 15px var(--accent-glow);
-  z-index: 2;
+    position: absolute;
+    left: 14px; /* Centered on line */
+    top: 0;
+    width: 34px;
+    height: 34px;
+    background: var(--bg-dark);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+    z-index: 2;
 }
 
 /* The Glass Cards */
 .academic-glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 30px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  transition: 0.4s ease;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
 }
 
 .academic-glass-card:hover {
-  border-color: var(--accent);
-  transform: translateX(10px);
-  background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent);
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .academic-glass-card.latest {
-  border-left: 4px solid var(--accent);
-  background: linear-gradient(90deg, rgba(56, 189, 248, 0.05), transparent);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(90deg, rgba(56, 189, 248, 0.05), transparent);
 }
 
 .year-label {
-  display: inline-block;
-  font-family: var(--font-mono);
-  color: var(--accent);
-  font-size: 0.8rem;
-  margin-bottom: 10px;
+    display: inline-block;
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .academic-glass-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 700;
 }
 
 .institution {
-  color: var(--text-dim);
-  font-size: 0.95rem;
-  margin-bottom: 20px;
+    color: var(--text-dim);
+    font-size: 1rem;
+    margin-bottom: 25px;
 }
 
 /* Detail Grid inside Card */
 .academic-details {
-  display: flex;
-  gap: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
 }
 
 .detail-item span {
-  display: block;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  letter-spacing: 1px;
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
 }
 
 .detail-item strong {
-  font-size: 1.1rem;
-  color: #fff;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .academic-wrapper { margin-left: 80px; padding: 60px 5%; }
-  .timeline-container::before { left: 20px; }
-  .timeline-item { padding-left: 50px; }
-  .timeline-node { left: 5px; }
-  .glow-text { font-size: 2rem; }
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .academic-wrapper { margin-left: 80px; padding: 60px 5%; }
+}
+
+@media (max-width: 600px) {
+    .glow-text { font-size: 2rem; }
+    .timeline-container::before { left: 20px; }
+    .timeline-item { padding-left: 50px; }
+    .timeline-node { 
+        left: 4px; 
+        width: 28px; 
+        height: 28px; 
+    }
+    .academic-glass-card { padding: 20px; }
+    .academic-glass-card h3 { font-size: 1.3rem; }
+    .academic-details { gap: 15px; }
 }
