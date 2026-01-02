@@ -1,0 +1,147 @@
+/* ===== CERTIFICATIONS HUB CSS ===== */
+
+.cert-wrapper {
+    margin-left: 260px;
+    padding: 80px 8%;
+    min-height: 100vh;
+    position: relative;
+    background: var(--bg-dark);
+}
+
+.glow-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    margin-bottom: 60px;
+    font-size: 0.9rem;
+}
+
+/* Category Dividers */
+.category-divider {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+    margin: 60px 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category-divider::after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background: var(--border);
+}
+
+/* Credentials Grid */
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.glass-cert-card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.glass-cert-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Specific Style for Awards */
+.award-glow:hover {
+    border-color: #fbbf24; /* Gold accent */
+    box-shadow: 0 15px 40px rgba(251, 191, 36, 0.15);
+}
+
+.award-glow .cert-icon i { color: #fbbf24; }
+
+.platform-tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.glass-cert-card h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.glass-cert-card p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Icon Management */
+.cert-icon {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Buttons and Footer */
+.cert-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.cert-date {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+.btn-verify {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-verify:hover {
+    color: var(--accent);
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cert-wrapper { margin-left: 80px; padding: 60px 5%; }
+    .glow-title { font-size: 2.5rem; }
+}
