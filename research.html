@@ -4,156 +4,235 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Abrar Rakin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"> 
   <link rel="stylesheet" href="research.css"> 
 </head>
 <body>
 
   <nav class="vertical-nav">
-    <h1 class="logo">Rakin</h1>
+    <div class="logo-box">
+      <h1 class="logo">Abrar Rakin<span>.</span></h1>
+    </div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="academic.html" class="active">Academic</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="cocurricular.html">Co-Curricular</a></li>
-      <li><a href="certifications.html">Certifications</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="competitive.html">Competitive Programming</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html"><i class="fas fa-th-large"></i> <span>Home</span></a></li>
+      <li><a href="academic.html"><i class="fas fa-user-graduate"></i> <span>Academic</span></a></li>
+      <li><a href="research.html" class="active"><i class="fas fa-microscope"></i> <span>Research</span></a></li>
+      <li><a href="cocurricular.html"><i class="fas fa-users"></i> <span>Co-Curricular</span></a></li>
+      <li><a href="competitive.html"><i class="fas fa-terminal"></i> <span>Competitive</span></a></li>
+      <li><a href="projects.html"><i class="fas fa-layer-group"></i> <span>Projects</span></a></li>
+      <li><a href="certifications.html"><i class="fas fa-certificate"></i> <span>Certifications & Achivements</span></a></li>
+      <li><a href="contact.html"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
     </ul>
+    <div class="nav-footer">
+      <div class="status-dot"></div> Available for Research
+    </div>
   </nav>
 
-  <section class="research-section">
-    <h1 class="page-title">Research Publications</h1>
-    <p class="page-subtitle">Exploring Machine Learning, Deep Learning, NLP, XAI, and Computer Vision.</p>
+  <main class="research-wrapper">
+    <div class="grid-overlay"></div>
+    
+    <header class="section-intro">
+      <h1 class="glow-title">Scientific Contributions</h1>
+      <p class="subtitle">Exploring Machine Learning, Deep Learning, NLP, XAI, and Computer Vision.</p>
+    </header>
 
-    <div class="research-container">
+    <div class="research-grid">
       
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status online">Online</span>
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-stethoscope"></i></div>
+          <div class="node-line"></div>
         </div>
-        <h3 class="paper-title">Boosted Forest Soft Ensemble of XGBoost, Gradient Boosting, and Random Forest with Explainable AI for Thyroid Cancer Recurrence Prediction</h3>
-        <p class="paper-desc">Developed a Boosted Forest Soft Ensemble model with Explainable AI that achieved 98.70% accuracy in predicting thyroid cancer recurrence</p>
-        <div class="card-footer">
-          <a href="https://doi.org/10.1109/QPAIN66474.2025.11171854" class="btn-link">Read Paper →</a>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (Ai-Scities 2025)</span>
-        </div>
-        <h3 class="paper-title">A Multi-Class Heart Disease and Stroke Risk Classification Framework for Combined  Assessment: A Machine Learning Approach</h3>
-        <p class="paper-desc">Developed an integrated and explainable multi-disease ML system using LightGBM to jointly predict heart disease and stroke risks with 89% accuracy and ~0.99 AUC using routine clinical biomarkers.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
+        <div class="research-glass-card published">
+          <div class="card-meta">
+            <span class="tag-badge">Conference</span>
+            <span class="status-indicator online">Online (IEEE)</span>
+          </div>
+          <h3 class="paper-title">Boosted Forest Soft Ensemble of XGBoost, Gradient Boosting, and Random Forest with Explainable AI for Thyroid Cancer Recurrence Prediction</h3>
+          <p class="paper-summary">Developed a Boosted Forest Soft Ensemble model with Explainable AI that achieved 98.70% accuracy in predicting thyroid cancer recurrence.</p>
+          <div class="card-tech-stack">
+            <span>XGBoost</span><span>SHAP</span><span>Ensemble</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://doi.org/10.1109/QPAIN66474.2025.11171854" target="_blank" class="btn-action">Read Paper <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
 
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (Ai-Scities 2025)</span>
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="node-line"></div>
         </div>
-        <h3 class="paper-title">Sleep Disorder Classification Using HSE-NET Ensemble: A Robust Machine Learning Framework</h3>
-        <p class="paper-desc">Built HSE-NET, a stacked ensemble system for scalable sleep disorder classification, achieving 96% accuracy and outperforming individual and prior ensemble models.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (Ai-Scities 2025)</span>
-        </div>
-        <h3 class="paper-title">XSG-Ensemble: A Weighted Voting Ensemble Machine Learning Model for Enhanced Chronic Kidney Disease Prediction</h3>
-        <p class="paper-desc">Developed XSG-Ensemble, a weighted machine learning model for early CKD prediction, achieving ~98% accuracy and 99.85% AUC with strong clinical interpretability.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
-        </div>
-      </div>
-            
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (IDAA 2025)</span>
-        </div>
-        <h3 class="paper-title">Obesity Detection using Traditional Machine Learning and Clinical Interpretation with Explainable AI</h3>
-        <p class="paper-desc">Built an interpretable multi-class ML system for obesity level prediction using lifestyle and anthropometric features, achieving up to 98% accuracy with XGBoost and LightGBM.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">Ai-Scities 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">A Multi-Class Heart Disease and Stroke Risk Classification Framework for Combined Assessment: A Machine Learning Approach</h3>
+          <p class="paper-summary">Developed an integrated and explainable multi-disease ML system using LightGBM to jointly predict heart disease and stroke risks with 89% accuracy.</p>
+          <div class="card-tech-stack">
+            <span>LightGBM</span><span>Biomarkers</span><span>Stroke Risk</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
         </div>
       </div>
 
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (MedCAVIA 2025)</span>
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-bed"></i></div>
+          <div class="node-line"></div>
         </div>
-        <h3 class="paper-title">Privacy-Preserving Fetal Health Classification Using Federated Learning with XGBoost and Random Forest</h3>
-        <p class="paper-desc">Introduces a privacy-preserving federated ensemble learning framework for fetal health classification using CTG data, achieving superior predictive performance without sharing sensitive patient information.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
-        </div>
-      </div>
-
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (MedCAVIA 2025)</span>
-        </div>
-        <h3 class="paper-title">Predicting Alzheimer’s Disease Using Hybrid Ensemble Learning and SHAP-Based Interpretability</h3>
-        <p class="paper-desc">Proposes a hybrid ensemble learning framework for early Alzheimer’s Disease prediction that integrates stacking, bagging, and weighted voting, achieving 95.36% accuracy while leveraging explainable AI to enhance clinical trust and support scalable deployment in low-resource healthcare settings.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">Ai-Scities 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Sleep Disorder Classification Using HSE-NET Ensemble: A Robust Machine Learning Framework</h3>
+          <p class="paper-summary">Built HSE-NET, a stacked ensemble system for scalable sleep disorder classification, achieving 96% accuracy and outperforming prior models.</p>
+          <div class="card-tech-stack">
+            <span>HSE-NET</span><span>Stacked Ensemble</span><span>Sleep Analysis</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
         </div>
       </div>
 
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (ICCIT 2025)</span>
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-capsules"></i></div>
+          <div class="node-line"></div>
         </div>
-        <h3 class="paper-title">Transformer-Based Multi-Class Categorization of Suicide Triggers in Bangla Headlines</h3>
-        <p class="paper-desc">Developed a fine-grained Bangla suicide news classification system using transformer models, achieving 92.92% accuracy and 0.92 F1-score to support mental health monitoring and intervention.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (ICCIT 2025)</span>
-        </div>
-        <h3 class="paper-title">Transformer-Assisted Categorization and Scope Detection of Bangla News Headlines: A Case Study on Politics, Business, and Crime</h3>
-        <p class="paper-desc">Developed a dual-task Bangla news classification system using transformer models, achieving up to 92% accuracy to categorize headlines by topic and geographic scope, supporting personalized recommendations and content moderation.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">Ai-Scities 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">XSG-Ensemble: A Weighted Voting Ensemble Machine Learning Model for Enhanced Chronic Kidney Disease Prediction</h3>
+          <p class="paper-summary">Developed XSG-Ensemble, a weighted ML model for early CKD prediction, achieving ~98% accuracy and 99.85% AUC with clinical interpretability.</p>
+          <div class="card-tech-stack">
+            <span>Weighted Voting</span><span>CKD</span><span>AUC 99.85%</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
         </div>
       </div>
 
-      <div class="research-card">
-        <div class="card-header">
-          <span class="badge conference">Conference</span>
-          <span class="status accepted">Accepted (ICECTE 2025)</span>
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-weight"></i></div>
+          <div class="node-line"></div>
         </div>
-        <h3 class="paper-title">Automated Detection of Religious Aggression in Bengali Social Media: A Comparative Study of Machine Learning, Deep Learning, and Transformer Approaches</h3>
-        <p class="paper-desc">Developed a Bengali social media religious aggressiveness detection system using transformer models, achieving 88% accuracy and F1-score, enabling culturally sensitive automated content moderation.</p>
-        <div class="card-footer">
-          <span class="coming-soon">Link Available Soon</span>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">IDAA 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Obesity Detection using Traditional Machine Learning and Clinical Interpretation with Explainable AI</h3>
+          <p class="paper-summary">Built an interpretable multi-class ML system for obesity level prediction using lifestyle features, achieving up to 98% accuracy with XGBoost and LightGBM.</p>
+          <div class="card-tech-stack">
+            <span>XGBoost</span><span>LightGBM</span><span>Clinical XAI</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
         </div>
       </div>
 
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-baby"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">MedCAVIA 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Privacy-Preserving Fetal Health Classification Using Federated Learning with XGBoost and Random Forest</h3>
+          <p class="paper-summary">Introduces a privacy-preserving federated ensemble learning framework for fetal health classification without sharing sensitive patient information.</p>
+          <div class="card-tech-stack">
+            <span>Federated Learning</span><span>Privacy</span><span>CTG Data</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
+        </div>
       </div>
-  </section>
+
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-brain"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">MedCAVIA 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Predicting Alzheimer’s Disease Using Hybrid Ensemble Learning and SHAP-Based Interpretability</h3>
+          <p class="paper-summary">Hybrid ensemble framework integrating stacking and bagging for early Alzheimer’s prediction, achieving 95.36% accuracy with SHAP interpretability.</p>
+          <div class="card-tech-stack">
+            <span>Hybrid Ensemble</span><span>SHAP</span><span>Neuro-AI</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
+        </div>
+      </div>
+
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-comment-dots"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">ICCIT 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Transformer-Based Multi-Class Categorization of Suicide Triggers in Bangla Headlines</h3>
+          <p class="paper-summary">Developed a fine-grained Bangla suicide news classification system using transformer models, achieving 92.92% accuracy and 0.92 F1-score.</p>
+          <div class="card-tech-stack">
+            <span>Transformers</span><span>Bangla NLP</span><span>Mental Health</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
+        </div>
+      </div>
+
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-newspaper"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">ICCIT 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Transformer-Assisted Categorization and Scope Detection of Bangla News Headlines</h3>
+          <p class="paper-summary">Developed a dual-task Bangla news classification system achieving up to 92% accuracy to categorize headlines by topic and geographic scope.</p>
+          <div class="card-tech-stack">
+            <span>Scope Detection</span><span>Transformers</span><span>Classification</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
+        </div>
+      </div>
+
+      <div class="research-node">
+        <div class="node-sidebar">
+          <div class="node-icon"><i class="fas fa-users-slash"></i></div>
+          <div class="node-line"></div>
+        </div>
+        <div class="research-glass-card">
+          <div class="card-meta">
+            <span class="tag-badge">ICECTE 2025</span>
+            <span class="status-indicator accepted">Accepted</span>
+          </div>
+          <h3 class="paper-title">Automated Detection of Religious Aggression in Bengali Social Media: A Comparative Study</h3>
+          <p class="paper-summary">Comparative study of ML, DL, and Transformer approaches for detecting religious aggressiveness, enabling culturally sensitive content moderation.</p>
+          <div class="card-tech-stack">
+            <span>Religious Aggression</span><span>Social Media</span><span>Bengali</span>
+          </div>
+          <div class="card-footer"><span class="coming-soon">Link Available Soon</span></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
 </body>
 </html>
